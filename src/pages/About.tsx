@@ -18,7 +18,7 @@ const About = () => {
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed mb-12">
                 We are a leading IT solutions provider dedicated to transforming businesses through innovative technology. 
-                Our team of experts specializes in cloud solutions, cybersecurity, custom development, and digital transformation.
+                Our team of experts specializes in cloud solutions, custom development, and digital transformation.
               </p>
               {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
                 <div className="text-center">

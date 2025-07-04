@@ -15,7 +15,7 @@ const NewsLatterBox = () => {
         Lakshmi Information Technology provides cutting-edge solutions in web
         development, app development, cloud, and digital marketing.
         <br />
-        We're passionate about accelerating your digital growth.
+        We{`'`}re passionate about accelerating your digital growth.
       </p>
 
       <ul className="mb-8 list-disc space-y-2 pl-5 text-base text-body-color dark:text-body-color-dark">
@@ -27,7 +27,7 @@ const NewsLatterBox = () => {
       
 
       <p className="text-body-color dark:text-body-color-dark text-center text-base leading-relaxed">
-        Ready to take your business digital? Let’s build your success story
+        Ready to take your business digital? Let{`’`}s build your success story
         together.
       </p>
 

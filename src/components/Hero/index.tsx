@@ -17,7 +17,7 @@ const Hero = () => {
                 <p className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed sm:text-lg md:text-xl">
                   Lakshmi Information Technology Private Limited offers tailored
                   solutions in Web & App Development, Digital Marketing, and
-                  Cloud Services. Whether you're a startup or scaling
+                  Cloud Services. Whether you{`'`}re a startup or scaling
                   enterprise, we help you build, grow, and transform in the
                   digital world.
                 </p>

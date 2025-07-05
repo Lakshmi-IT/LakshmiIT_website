@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer className="dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 lg:flex ">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -127,8 +127,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+            <div className="flex  justify-between lg:justify-start lg:gap-10 w-full">
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className=" px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Useful Links
@@ -142,14 +143,7 @@ const Footer = () => {
                       Blog
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
+                 
                   <li>
                     <Link
                       href="/about"
@@ -162,20 +156,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className=" px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Terms
                 </h2>
                 <ul>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      TOS
-                    </Link>
-                  </li>
+                  
                   <li>
                     <Link
                       href="/"
@@ -192,16 +179,6 @@ const Footer = () => {
                       Refund Policy
                     </Link>
                   </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
                   <li>
                     <Link
                       href="/contact"
@@ -210,24 +187,11 @@ const Footer = () => {
                       Open Support Ticket
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      About
-                    </Link>
-                  </li>
                 </ul>
               </div>
+            </div>
+
+            
             </div>
           </div>
 

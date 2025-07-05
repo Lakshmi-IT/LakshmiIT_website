@@ -13,24 +13,41 @@ const menuData: Menu[] = [
     path: "/about",
     newTab: false,
   },
-    {
+  {
     id: 3,
     title: "Services",
     newTab: false,
     submenu: [
       {
         id: 41,
-        title: "Web Developement",
-        path: "/about",
+        title: "Web Development",
+        path: "/services/web-development",
         newTab: false,
       },
       {
         id: 42,
-        title: "App Developement",
-        path: "/contact",
+        title: "App Development",
+        path: "/services/app-development",
         newTab: false,
       },
-     
+      {
+        id: 43,
+        title: "Data Analytics",
+        path: "/services/data-analytics",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "UI/UX Design",
+        path: "/services/ui-ux-design",
+        newTab: false,
+      },
+      {
+        id: 45,
+        title: "Digital Marketing & SEO",
+        path: "/services/digital-marketing-seo",
+        newTab: false,
+      },
     ],
   },
   {
@@ -45,6 +62,5 @@ const menuData: Menu[] = [
     path: "/contact",
     newTab: false,
   },
-
 ];
 export default menuData;

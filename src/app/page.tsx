@@ -11,8 +11,6 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 
-
-
 export const metadata: Metadata = {
   title: "LakshmiIT | Web, App, Cloud & Digital Marketing Services",
   description:
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
     "E-commerce Development",
     "Technology Consulting",
     "IT Solutions Provider",
-    "Enterprise App Development"
+    "Enterprise App Development",
   ],
   authors: [{ name: "LakshmiIT Team", url: "https://lakshmiit.com" }],
   creator: "Lakshmi Information Technology Pvt Ltd",
@@ -77,7 +75,6 @@ export const metadata: Metadata = {
     images: ["https://lakshmiit.com/og-image.jpg"],
   },
 };
-
 
 export default function Home() {
   return (

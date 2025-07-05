@@ -5,18 +5,19 @@ import Image from "next/image";
 const DataAnalyticsPage = () => {
   return (
     <section className="py-16 px-4 md:px-16 lg:px-32 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto lg:mt-[120px] mt-[80px]">
         <h1 className="text-4xl font-bold mb-6 text-center text-primary">Data Analytics</h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-center">
           Unlock actionable insights and drive smarter decisions with our end-to-end data analytics solutions tailored for your business growth.
         </p>
 
         <Image
-          src="/images/services/data-analytics.png"
+        unoptimized
+          src="/services/data_analytics.png"
           alt="Data Analytics"
-          width={1200}
-          height={600}
-          className="rounded-xl shadow-lg mb-10 mx-auto"
+          width={400}
+          height={400}
+          className="mx-auto mb-12 rounded-md shadow-md lg:h-[400px] lg:w-[700px]"
         />
 
         <h2 className="text-2xl font-semibold text-black dark:text-white mb-4">Our Services</h2>

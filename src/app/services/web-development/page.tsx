@@ -8,30 +8,32 @@ const WebDevelopmentPage = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Hero Section */}
-      <div className="text-center mb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <div className=" mb-10 text-center lg:mt-[120px] mt-[80px]">
+        <h1 className="mb-4 text-4xl font-bold md:text-5xl">
           Web Development Services
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="mx-auto text-center  w-full text-lg text-gray-600 dark:text-gray-300">
           Build fast, secure, and scalable websites that drive business growth.
-          From concept to deployment, we offer end-to-end web solutions tailored to your needs.
+          From concept to deployment, we offer end-to-end web solutions tailored
+          to your needs.
         </p>
       </div>
 
       {/* Hero Image */}
       <Image
-        src="/images/services/web-development.jpg"
+        unoptimized
+        src="/services/service-web-deveopment.png"
         alt="Web Development Illustration"
-        width={1200}
-        height={600}
-        className="rounded-xl mx-auto shadow-xl mb-12"
+        width={400}
+        height={400}
+        className="mx-auto mb-12 rounded-md shadow-md lg:w-[700px] lg:h-[400px]"
       />
 
       {/* What We Offer */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+      <section className="mb-16 flex lg:flex-row flex-col items-center justify-between ">
         <div>
-          <h2 className="text-2xl font-semibold mb-4">What We Offer</h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+          <h2 className="mb-4 text-2xl font-semibold">What We Offer</h2>
+          <ul className="list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
             <li>Custom website design & development</li>
             <li>Progressive Web Apps (PWA)</li>
             <li>CMS Integration (WordPress, Headless CMS)</li>
@@ -42,9 +44,9 @@ const WebDevelopmentPage = () => {
         </div>
 
         {/* Interactive Features */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Interactive Features</h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+        <div className="pt-3 lg:pt-0">
+          <h2 className="mb-4 text-2xl font-semibold">Interactive Features</h2>
+          <ul className="list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
             <li>Live chat and chatbot integrations</li>
             <li>Dynamic forms with validation</li>
             <li>Interactive dashboards and charts</li>
@@ -53,12 +55,24 @@ const WebDevelopmentPage = () => {
             <li>Newsletter subscriptions and popups</li>
           </ul>
         </div>
+        <div className="pt-3 lg:pt-0">
+          <h2 className="mb-4 text-2xl font-semibold">Why Choose Us?</h2>
+          <ul className="list-disc space-y-2 pl-6 text-gray-700 dark:text-gray-300">
+            <li>Experienced and certified developers</li>
+            <li>Agile development process</li>
+            <li>Post-launch support & maintenance</li>
+            <li>SEO and performance optimization</li>
+            <li>Mobile-first, accessible designs</li>
+          </ul>
+        </div>
       </section>
 
       {/* Technologies We Use */}
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Technologies We Use</h2>
-        <div className="flex flex-wrap justify-center gap-6 text-gray-700 text-lg">
+        <h2 className="mb-6 text-center text-2xl font-semibold">
+          Technologies We Use
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 text-lg text-gray-700 dark:text-gray-300">
           <span>Next.js</span>
           <span>React</span>
           <span>Tailwind CSS</span>
@@ -70,26 +84,14 @@ const WebDevelopmentPage = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-16">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Us?</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-          <li>Experienced and certified developers</li>
-          <li>Agile development process</li>
-          <li>Post-launch support & maintenance</li>
-          <li>SEO and performance optimization</li>
-          <li>Mobile-first, accessible designs</li>
-        </ul>
-      </section>
-
       {/* FAQ Section */}
-     <FAQSection/>
+      <FAQSection />
 
       {/* Call to Action */}
       <div className="mt-12 text-center">
         <a
           href="/contact"
-          className="inline-block bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-700 transition duration-300"
+          className="inline-block rounded-md bg-blue-600 px-8 py-4 text-lg font-medium text-white transition duration-300 hover:bg-blue-700"
         >
           Let’s Build Your Website 🚀
         </a>

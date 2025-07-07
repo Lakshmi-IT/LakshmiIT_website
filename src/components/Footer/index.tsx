@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer className="dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24">
         <div className="container">
-          <div className="-mx-4 lg:flex ">
+          <div className="-mx-4 lg:flex">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -119,7 +119,7 @@ const Footer = () => {
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="fill-current ml-2"
+                      className="ml-2 fill-current"
                     >
                       <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.975.975 1.247 2.242 1.31 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.247-3.608 1.31-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.247-2.242-1.31-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.247 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.736 0 8.332.014 7.052.072 5.773.13 4.602.398 3.635 1.365 2.668 2.332 2.4 3.503 2.342 4.782.014 8.332 0 8.736 0 12s.014 3.668.072 4.948c.058 1.279.326 2.45 1.293 3.417.967.967 2.138 1.235 3.417 1.293 1.28.058 1.684.072 4.948.072s3.668-.014 4.948-.072c1.279-.058 2.45-.326 3.417-1.293.967-.967 1.235-2.138 1.293-3.417.058-1.28.072-1.684.072-4.948s-.014-3.668-.072-4.948c-.058-1.279-.326-2.45-1.293-3.417-.967-.967-2.138-1.235-3.417-1.293C15.668.014 15.264 0 12 0zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
                     </svg>
@@ -127,71 +127,84 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex  justify-between lg:justify-start lg:gap-10 w-full">
+            <div className="flex w-full justify-between lg:justify-start lg:gap-10">
+              <div className="px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                    Useful Links
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="/blog"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Blog
+                      </Link>
+                    </li>
 
-            <div className=" px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                 
-                  <li>
-                    <Link
-                      href="/about"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
+                    <li>
+                      <Link
+                        href="/about"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        About
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            <div className=" px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Refund Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                </ul>
+              <div className="px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                    Terms
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="/"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Refund Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Open Support Ticket
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            
+              <div className="mb-12 px-4 sm:w-full md:w-full lg:mb-16 lg:w-[600px] lg:block hidden ">
+                <h2 className="mb-6 text-xl font-bold text-black dark:text-white">
+                  Our Location
+                </h2>
+                <div className="overflow-hidden rounded-lg shadow-lg">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14035.67894465541!2d78.4470612871582!3d17.446029000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90bcdbd15ec3%3A0x5e3442977146a4dc!2sTECHNALS%20Co-Working%2C%20Staffing%20and%20Consulting!5e1!3m2!1sen!2sin!4v1751872469459!5m2!1sen!2sin"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
 
